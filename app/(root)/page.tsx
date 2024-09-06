@@ -11,7 +11,7 @@ const Home = async() => {
         <div className='home-content'>
             <header className='home-header'>
                <HeaderBox
-               type="greeting"
+               type="greeting" 
                title="welcome"
                user={loggedIn?.name || 'Guest'}
                subtext="Access and manage your account and transactions efficiently"

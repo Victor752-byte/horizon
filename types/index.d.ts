@@ -177,6 +177,7 @@ declare interface PlaidLinkProps {
   user: User;
   variant?: "primary" | "ghost";
   dwollaCustomerId?: string;
+  style?: string
 }
 
 // declare type User = sdk.Models.Document & {

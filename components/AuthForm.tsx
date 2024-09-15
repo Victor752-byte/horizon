@@ -24,7 +24,7 @@ import { Loader2 } from 'lucide-react'
 import { useRouter } from 'next/navigation'
 import { signIn, signUp } from '@/lib/actions/user.actions'
 import PlaidLink from './PlaidLink'
-import useUserStore from '@/store/userStore'
+import {useUserStore} from '@/store/userStore'
  
 
 
@@ -85,7 +85,7 @@ const AuthForm = ({type}: {type: string}) => {
     }
 
   }
-
+  
   return (
     <section className='auth-form'>
         <header className='flex flex-col gap-5 md:gap-8'>
@@ -154,6 +154,7 @@ const AuthForm = ({type}: {type: string}) => {
                       label='State'
                       name="state"
                       placeholder='Example: NY'
+                      hint='Two letter abbreviation of your state of residence'
                       />
                       <CustomFormField
                       control={form.control}
@@ -174,6 +175,7 @@ const AuthForm = ({type}: {type: string}) => {
                       label='SSN'
                       name="ssn"
                       placeholder='Example 1234'
+                      hint='Last four or full 9 digits of your ssn'
                       />
                       </div>
                         </>

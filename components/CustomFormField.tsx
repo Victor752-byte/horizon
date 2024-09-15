@@ -17,10 +17,11 @@ interface TCustomFormFieldProps{
     control: Control<z.infer<typeof AuthFormSchema>>,
     label: string,
     name: FieldPath<z.infer<typeof AuthFormSchema>>,
-    placeholder: string
+    placeholder: string,
+    hint?: string
 }
 
-const CustomFormField = ({ control, label, name, placeholder}: TCustomFormFieldProps) => {
+const CustomFormField = ({ control, label, name, placeholder, hint}: TCustomFormFieldProps) => {
   return (
     <div>
       <FormField
@@ -37,6 +38,7 @@ const CustomFormField = ({ control, label, name, placeholder}: TCustomFormFieldP
                     className='input-class' 
                     />
                   </FormControl>
+                  <span className='text-xs pl-1 font-light'>{hint}</span>
                   <FormMessage className='form-message mt-2' />
                 </div>
               )}

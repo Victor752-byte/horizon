@@ -18,6 +18,7 @@ import Footer from './Footer'
 import PlaidLink from './PlaidLink'
 
 
+
 const MobileNavbar = ({user}: MobileNavProps) => {
   const pathname = usePathname()
   return (

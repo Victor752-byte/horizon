@@ -35,7 +35,7 @@ const CustomFormField = ({ control, label, name, placeholder, hint}: TCustomForm
                     placeholder={placeholder}
                     {...field}
                     type={name === 'password' ? 'password' : 'text'}
-                    className='input-class' 
+                    className='input-class placeholder:text-sm' 
                     />
                   </FormControl>
                   <span className='text-xs pl-1 font-light'>{hint}</span>
